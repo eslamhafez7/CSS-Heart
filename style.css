@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: #000;
+}
+.eslam {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 180px;
+    height: 280px;
+    background-color: red;
+    border-radius: 300px 300px 0 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.eslam::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    background-color: red;
+    transform: rotate(-90deg);
+    left: -50px;
+    top: 50px;
+    border-radius: 300px 300px 0 0;
+}
